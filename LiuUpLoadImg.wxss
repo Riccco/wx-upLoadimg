@@ -1,0 +1,25 @@
+.up-load-img{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.up-load{
+  width: inherit;
+}
+
+.showImg{
+  width: inherit;
+}
+
+.wrp{
+  margin-right: 12rpx;
+  position: relative;
+}
+
+.closeImg{
+  position: absolute;
+  width: 32rpx;
+  height: 32rpx;
+  right: 0;
+  top: 0;
+}

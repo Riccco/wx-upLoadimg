@@ -1,0 +1,9 @@
+<view class="up-load-img">
+  <block wx:if="{{Item.length !== 0}}">
+    <view style="width:{{width+'rpx'}}"  wx:key="index"  wx:for="{{group.showImg}}" class="wrp">
+      <image src="{{item}}"  mode="widthFix" class="showImg"></image>
+      <image data-index="{{index}}" bindtap="close" src="./img/CloseButton.png"  mode="widhFix" class="closeImg"></image>
+    </view>
+  </block>
+  <image style="width:{{width+'rpx'}}" wx:if="{{group.showImg.length < imgLength}}" bindtap="upLoad" src="{{upLoad}}" mode="widthFix" class="up-load"></image>
+</view>
