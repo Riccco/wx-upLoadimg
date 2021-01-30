@@ -19,6 +19,10 @@ Component({
       type:Object,
       observer:function(){
         this.setData({group : this.data.showImgs})
+        this.triggerEvent('getImgs',{
+          imgUrl:this.data.group.saveArr,
+          switch:true
+        })
       }
     },
     width:{
@@ -107,10 +111,7 @@ Component({
         }
       })
 
-      this.triggerEvent('getImgs',{
-        imgUrl:this.data.group.saveArr,
-        switch:true
-      })
+
     }
   }
 })
